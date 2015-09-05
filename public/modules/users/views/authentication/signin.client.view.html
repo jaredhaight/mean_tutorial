@@ -17,14 +17,16 @@
 			<img src="/modules/users/img/buttons/github.png">
 		</a>
 	</div>
-	<h3 class="col-md-12 text-center">Or with your account</h3>
-	<div class="col-xs-offset-1 col-xs-10 col-md-offset-4 col-md-4">
+	<h3 class="col-md-12 text-center">or with your account</h3>
+	<div class="col-xs-offset-1 col-xs-10 col-md-offset-4 col-md-4 login-form-bg">
 		<form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
 			<fieldset>
-				<div data-ng-show="error" class="text-center text-danger">
-					<strong data-ng-bind="error"></strong>
-				</div>
 				<div class="form-group">
+					<div data-ng-show="error" class="text-center text-danger">
+						<div class="alert alert-danger" role="alert">
+							<strong data-ng-bind="error"></strong>
+						</div>
+					</div>
 					<div class="input-group input-group-lg">
 						<span class="input-group-addon">
 							<i class="text-muted glyphicon glyphicon-user"></i>
@@ -45,7 +47,7 @@
 				</div>
 				<div class="forgot-password">
 					<a href="/#!/password/forgot">Forgot your password?</a> or
-					<a href="/#!/signup">Sign up</a>
+					<a href="/#!/signup">Sign up!</a>
 				</div>
 			</fieldset>
 		</form>
